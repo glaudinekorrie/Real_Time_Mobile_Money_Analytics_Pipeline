@@ -1,2 +1,11 @@
-# Safaricom-data-engineering-project-1
-Real time mobile money analytics pipeline
+# Real time mobile money analytics pipeline
+##Problem##
+Objectives
+Architecture
+Technology stack
+Data model
+Pipeline
+Data quality strategy
+Monitoring strategy
+Limitations
+Future improvements
