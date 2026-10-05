@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16   #postgres database image version 16
+    container_name: mobile_money_postgres   #recognizable name for the container
+    environment:
+      POSTGRES_DB: mobile_money   #database name
+      POSTGRES_USER: postgres     #database username
+      POSTGRES_PASSWORD: postgres   #database password
+    ports:
+      - "5432:5432"   #allows access to the database from the host machine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data    #persists the database data in a named volume to prevent data loss when the container is removed
+
+volumes:
+  postgres_data:
