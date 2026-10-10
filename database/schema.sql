@@ -1,5 +1,7 @@
+CREATE SEQUENCE customer_id_seq START WITH 1;
+
 CREATE TABLE Customers (
-    customer_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    customer_id VARCHAR PPRIMARY KEY DEFAULT 'C' || NEXTVAL('customer_id_seq'),
     customer_name VARCHAR,
     phone_no VARCHAR UNIQUE,
     customer_segment VARCHAR,
